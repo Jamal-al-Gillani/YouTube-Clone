@@ -8,21 +8,11 @@ pipeline {
                 git 'https://github.com/Jamal-al-Gillani/Youtube-clone.git'
             }
         }
-        
-        stage('Configure Nginx') {
-            steps {
-                script {
-                    // Run the custom script to configure and start Nginx
-                    sh 'groovy script.groovy'
-                }
-            }
-        }
     }
     
     post {
         always {
-            // Optionally, you can add commands here to stop Nginx or clean up
-            echo " pipeline successfully runed "
+            echo "Pipeline successfully run"
         }
     }
 }
