@@ -22,6 +22,7 @@ pipeline {
     post {
         always {
             // Optionally, you can add commands here to stop Nginx or clean up
+            echo " pipeline successfully runed "
         }
     }
 }
