@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Pull Latest Code') {
             steps {
-                sh "cd /home/jamal/projects/Youtube-clone  && git pull"
+                sh "cd /home/jamal/projects/Youtube-clone  && git stash && git pull"
             }
         }
 
